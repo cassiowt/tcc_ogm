@@ -13,13 +13,18 @@ import javax.persistence.OrderColumn;
 
 import org.hibernate.annotations.GenericGenerator;
 
+
+
+
+
 @Entity
+@GenericGenerator(name = "uuid", strategy = "uuid2")
 public class Hike {
 
 
 	@Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(generator="uuid")
+	
     private String id;
 
     private String description;
@@ -34,16 +39,13 @@ public class Hike {
     private List<HikeSection> sections;
 
     public Hike() {
-		// TODO Auto-generated constructor stub
 	}
     
     public Hike(String string, Date date2, BigDecimal bigDecimal, HikeSection hikeSection, HikeSection hikeSection2,
     		HikeSection hikeSection3) {
-    	// TODO Auto-generated constructor stub
     }
 
 	public Hike(String string, Date date2, BigDecimal bigDecimal, HikeSection hikeSection, HikeSection hikeSection2) {
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getDescription() {

@@ -68,6 +68,4 @@ public class Person {
 	public void setOrganizedHikes(Set<Hike> organizedHikes) {
 		this.organizedHikes = organizedHikes;
 	}
-
-    // constructors, getters and setters...
 }
