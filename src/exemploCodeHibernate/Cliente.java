@@ -1,4 +1,4 @@
-package exemploCodeJava;
+package exemploCodeHibernate;
 
 public class Cliente extends Pessoa {
 

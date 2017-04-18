@@ -5,30 +5,41 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class HikeSection {
 
-    private String start;
-    private String end;
+	private String start;
+	private String end;
+
 	
-    public HikeSection() {
+	public HikeSection() {
 		// TODO Auto-generated constructor stub
 	}
-    
-    public HikeSection(String start, String end) {
+
+	
+	public HikeSection(String start, String end) {
 		super();
 		this.start = start;
 		this.end = end;
 	}
+
+
 	public String getStart() {
 		return start;
 	}
+
 	public void setStart(String start) {
 		this.start = start;
 	}
+
 	public String getEnd() {
 		return end;
 	}
+
 	public void setEnd(String end) {
 		this.end = end;
 	}
 
-    // constructors, getters and setters...
+	@Override
+	public String toString() {
+		return "HikeSection [start=" + start + ", end=" + end + "]";
+	}
+
 }

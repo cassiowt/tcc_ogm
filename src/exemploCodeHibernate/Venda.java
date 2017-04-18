@@ -1,4 +1,4 @@
-package exemploCodeJava;
+package exemploCodeHibernate;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package exemploCodeJava;
+package exemploCodeHibernate;
 
 public class Fornecedor extends Pessoa {
 
@@ -16,7 +16,7 @@ public class Fornecedor extends Pessoa {
 		if( this.cnpj.length() > 14) System.out.println("OK CNPJ");
 	}
 	public void imprimePessoa() {
-		super.imprimePessoa();
+	
 		System.out.println(" CNPJ: " + this.cnpj);
 	}
 }
